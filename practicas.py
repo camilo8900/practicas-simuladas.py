@@ -126,7 +126,7 @@ class Asesoria(Servicio):
 # ============= RESERVAS ============
 class Reserva:
 
-    def __init__(self, cliente, servicio, cantidad, tipo_tiempo):
+    def _init_(self, cliente, servicio, cantidad, tipo_tiempo):
         if cantidad <= 0:
             raise ReservaError("Tiempo inválido")
 
@@ -157,7 +157,7 @@ class Reserva:
 
 # ================== SISTEMA ==================
 class Sistema:
-    def __init__(self):
+    def _init_(self):
         self.clientes = []
         self.reservas = []
 
